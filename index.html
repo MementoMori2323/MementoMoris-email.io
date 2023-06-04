@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="JAVA/script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+<div class="parent-container">
+    <div class="child-container" id="child">
+        <div class="mobile-pic">
+            <img src="IMAGES/illustration-sign-up-mobile.svg" loading="lazy" class="mobile">
+        </div>
+        <div class="imgs-container" style="order: 2">
+            <img src="IMAGES/illustration-sign-up-desktop.svg" loading="lazy" class="desktop">
+        </div>
+        <div class="txt-info">
+            <h1>Stay updated!</h1>
+            <br>
+            <p>Join 60.000+ products managers receiving monthly updates on:</p>
+            <br>
+            <p><i class="bi bi-check-circle-fill"></i> Product discovery and building what matters</p>
+            <br>
+            <p><i class="bi bi-check-circle-fill"></i> Measuring to ensure updates and success</p>
+            <br>
+            <p><i class="bi bi-check-circle-fill"></i> And much more!</p>
+            <br>
+            <form method="get" action="#" id="form" name="form">
+                <div class="input-field">
+                    <div class="labels">
+                        <label for="email">Email address</label>
+                        <p id="notValid">Valid email required</p>
+                    </div>
+                    <br>
+                    <input type="text" id="email" name="email" autocomplete="off" placeholder="email@company.com">
+                    <br> <br> <br>
+                    <button type="submit" name="submit" onclick="" id="btn1">Subscribe to monthly newsletter</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="thanks" id="thanks" name="thanks">
+        <div class="tfs">
+            <h1><p><i class="bi bi-check-circle-fill"></i></h1>
+            <h1 class="t-txt">Thanks for subscribing!</h1>
+            <p>A confirmation email has been sent to 
+            <br> <span id="eAddress" style="font-weight: bold;"></span>. Please open it
+            and click the button inside to <br> confirm your subscription.</p>
+            <br>
+            <div class="buttoM">
+                <button type="button" onclick="#">Dismiss message</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
