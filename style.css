@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+Nandinagari&family=Noto+Sans+Nushu&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+body{
+    background-color: hsl(234, 29%, 20%);
+}
+.parent-container{
+    width: 100%;
+    max-height: auto;
+}
+.child-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    background-color: whitesmoke;
+    display: flex; /* change back to display = flex; once phase 2 is done */
+    padding: 25px;
+    border-radius: 25px;
+    gap: 25px;
+    overflow: hidden;
+}
+.imgs-container{
+    display: flex;
+    justify-content: flex-end;
+}
+.mobile{
+    display: none;
+}
+.txt-info{
+    width: 60%;
+    padding: 45px;
+}
+.txt-info h1{
+    font-size: clamp(14px, 3vw, 45px);
+    white-space: nowrap;
+    color: hsl(234, 29%, 20%);
+}
+.txt-info p{
+    font-size: clamp(8px, 1vw, 16px);
+}
+.bi{
+    color: hsl(4, 100%, 67%);
+}
+.input-field{
+    font-size: 12px;
+}
+input, button{
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+}
+input{
+    border: 1px solid grey;
+}
+button{
+    color: whitesmoke;
+    background-color: hsl(234, 29%, 20%);
+    border: none;
+    font-weight: bold;
+}
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 7px 10px 22px 6px rgba(255,98,87,0.28);
+    -webkit-box-shadow: 7px 10px 22px 6px rgba(255,98,87,0.28);
+    -moz-box-shadow: 7px 10px 22px 6px rgba(255,98,87,0.28);
+}
+.labels{
+    display: flex;
+    justify-content: space-between;
+}
+.labels p{
+    color:hsl(4, 100%, 67%);
+    font-size: 12px;
+    display: none;
+}
+
+/* Phase 2 */
+
+.thanks{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+.tfs{
+    width: 60%;
+    height: auto;
+    border: 1px solid green;
+    padding: 35px;
+    background-color: whitesmoke;
+    border-radius: 25px;
+}
+.t-txt{
+    color: hsl(234, 29%, 20%);
+    font-weight: bold;
+}
+
+@media (max-width: 800px){
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        height: max-content;
+    }
+    .parent-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .child-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        padding: 0px;
+    }
+    .txt-info{
+        width: 100%;
+        padding: 5px 50px;
+    }
+    .txt-info h1{
+        font-size: clamp(24px, 10vw, 35px);
+    }
+    .txt-info p{
+        font-size: clamp(15px, 10vw, 16px);
+    }
+    input, button{
+        width: 100%;
+    }
+    .thanks{
+        width: max-content;
+        height: 100%;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .tfs{
+        width: max-content;
+        padding: 120px 220px;
+        border-radius: 0px;
+        width: 95%
+    }
+};
